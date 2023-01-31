@@ -1,0 +1,188 @@
+.main {
+    &__nav-wrapper {
+        border-right: solid $text-grey 0.5px;
+        position: relative;
+        padding-right: 9.313vw;
+        flex: 1 0 auto;
+        @include media-tablet {
+            padding-right: 0;
+            border-right: none;
+        }
+    }
+    &__nav-list {
+        right: 14px;
+        &_upper {
+            top: 25vh
+        }
+        &_lower {
+            bottom: 50vh;
+        }
+        &_card-block {
+            bottom: 24vh;
+        }
+        @include media-tablet {
+            display: none;
+        }
+    }
+}
+
+.top-content {
+    max-width: 970px;
+
+    &__upper-block {
+        display: flex;
+        height: 100vh;
+        @include media-tablet {
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+    &__bottom-block {
+        justify-content: space-between;
+        display: flex;
+        height: 100vh;
+        @include media-tablet {
+            align-items: center;
+        }
+
+    }
+    &__img {
+        &_bottom {
+            @include media-tablet {
+                margin-right:  0;
+                margin-left:  -9.375vw;
+            }
+        }
+        @include media-small-desktop {
+            width: 45%;
+        }
+        @include media-tablet {
+            margin-right:  -9.375vw;
+            height: 100vh;
+        }
+        @include media-mobile {
+            display: none;
+        }
+    }
+}
+
+.top-text-block {
+    margin-top: 96px;
+    max-width: 573px;
+    margin-right: 24px;
+    @include media-tablet {
+        margin-right: 130px;
+        margin-top: 96px;
+    }
+    @include media-small-tablet {
+        margin-right: 130px;
+        margin-top: 0;
+    }
+    @include media-mobile {
+        margin-right: 0;
+    }
+    &__heading {
+        font-family: 'Oswald';
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 58px;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+
+        @include media-small-desktop {
+            font-size: 30px;
+            line-height: 56px;
+        }
+    }
+    &__list-description {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+        margin-bottom: 20px;
+        @include media-small-desktop {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    &__list-item {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        @include media-small-desktop {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+
+.bottom-text-block {
+    @include media-tablet {
+        margin-left: 130px;
+    }
+    @include media-mobile {
+        margin-left: 0;
+    }
+
+   &__logo {
+        margin-left: 88px;
+        margin-bottom: 40px;
+        margin-top: 103px;
+        @include media-small-desktop {
+            margin-left: 19px;
+        }
+        @include media-tablet {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+   }
+    &__text {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+        max-width: 473px;
+        margin-left: 124px;
+        @include media-small-desktop {
+            font-size: 14px;
+            line-height: 22px;
+            margin-left: 36px;
+        }
+        @include media-large-desktop {
+            margin-left: 80px;
+        }
+    }
+}
+
+
+
+@media (max-width: 1226px) {
+    .bottom-text-block__text {
+        font-size: 14px;
+        line-height: 22px;
+        margin-left: 36px;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+

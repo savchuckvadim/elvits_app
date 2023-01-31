@@ -1,0 +1,36 @@
+.nav-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &__item {
+        direction: rtl;
+        // margin-right: 14px;
+        position: relative;
+        left: 1px;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    &__item::marker {
+        position: absolute;
+        color: $text-grey;
+        margin-left: 14px;
+    }
+    &__link {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $text-grey;
+        @include media-small-desktop {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+    &__close-btn {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}

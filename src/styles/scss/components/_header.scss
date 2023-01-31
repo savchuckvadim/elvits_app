@@ -1,0 +1,131 @@
+.no-sclroll {
+    overflow: hidden;
+}
+.dispay-none {
+    opacity: 0;
+}
+
+.header {
+    background-image: url(../../images/header-background-min.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    // min-height: 700px;
+    height: 100vh;
+    background-size: cover;
+    flex: 0 0 auto;
+
+    &__container {
+        height: 100%;
+        justify-content: space-between;
+        display: flex;
+        @include media-tablet {
+            justify-content: center;
+            align-items: center;
+        }
+        @include media-mobile {
+            height: auto;
+        }
+    }
+    &__nav-block {
+        border-right: solid $text-grey 0.5px;
+        height: 100%;
+        width: 30%;
+        position: relative;
+        @include media-tablet {
+            display: none;
+        }
+    }
+    &__nav-list {
+        position: absolute;
+        top: 43%;
+        right:14px;
+        min-width: 86%;
+    }
+
+}
+.burger-header {
+    background-color: $bg-dark;
+    display: none;
+    padding-left: 9.375vw;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    transition: 0.3s;
+    @include media-tablet {
+        display: flex;
+    }
+    @include media-mobile {
+        padding-top: 22px;
+        margin-bottom: 22px;
+    }
+    @include small-media-mobile {
+
+    }
+}
+.burger {
+    position: relative;
+    &__line {
+       width: 27px;
+       height: 3px;
+       background-color: #FFFFFF;
+       &:not(:last-child) {
+        margin-bottom: 6px;
+       }
+    }
+    &__button {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+.h1-block {
+    max-width: 872px;
+    &__heading {
+        font-family: 'Oswald';
+        font-weight: 200;
+        font-size: 110px;
+        line-height: 132%;
+        color: #FFFFFF;
+        margin-top: 96px;
+        @include media-tablet {
+            margin-top: 0;
+        }
+        @include media-small-tablet {
+            font-size: 80px;
+            line-height: 120px;
+        }
+        @include small-media-mobile {
+            font-size: 66px;
+            line-height: 82px;
+        }
+
+        &_bold {
+           font-weight: 600;
+        }
+       }
+    &__text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 156%;
+        color: #FFFFFF;
+    }
+    &__button {
+        margin-top: 64px;
+        padding: 16px 50px;
+        border: solid white 1px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+        @include media-mobile {
+            padding: 16px 44px;
+
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.footer {
+    position: relative;
+    background-size: cover;
+    flex: 0 0 auto;
+    height: 100vh;
+    &__container {
+        &_upper {
+            height: 100%;
+        }
+        @include media-mobile {
+            padding: 0;
+        }
+
+    }
+    &__nav-wrapper {
+        height: 100%;
+        position: relative;
+        border-right: solid #868585 0.5px;
+        @include media-tablet {
+            display: none;
+        }
+    }
+    &__nav-list {
+        right: 14px;
+        bottom: 22vh;
+        @include media-tablet {
+            display: none;
+        }
+    }
+    &__upper-block {
+        background-image: url(../../images/Background-min.png);
+        background-position: top 25% center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 75vh;
+        position: relative;
+        @include media-tablet {
+            height: 80vh;
+           }
+           @include media-mobile {
+            display: none;
+        }
+
+    }
+    &__lower-block {
+        align-items: flex-end;
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        @include media-mobile {
+            flex-direction: column;
+        }
+
+    }
+    &__form {
+        width: 39.8vw;
+        background-color: white;
+        min-height: 100vh;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &__info-block {
+        position: absolute;
+        bottom: 30px;
+        right: 0;
+        display: flex;
+        align-items: flex-end;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 180%;
+        color: #7E868E;
+        @include media-small-desktop {
+            width: 33%;
+        }
+        @include media-tablet {
+         flex-direction: column;
+         align-items: baseline;
+         flex-flow: column-reverse;
+        }
+        @include media-small-tablet {
+            width: 40%;
+           }
+           @include media-mobile {
+            position: static;
+            align-items: center;
+            width: 100vw;
+            padding: 1.8vh 0;
+        }
+
+    }
+    &__logo {
+      max-width: 35%;
+      margin-bottom: 20px;
+    }
+    &__contact {
+        display: flex;
+        @include media-mobile {
+            justify-content: center;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 68px;
+        @include media-mobile {
+            margin-left: 0;
+            align-items: center;
+        }
+
+    }
+    &__link {
+        color: #7E868E;
+        &_underline {
+            text-decoration: underline;
+        }
+    }
+}

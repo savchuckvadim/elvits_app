@@ -1,0 +1,31 @@
+.mobile-menu {
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    background-image: url(../../images/header-background-min.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    &__container {
+        position: relative;
+        height: 100%;
+    }
+    &__nav-wrapper {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-right: solid $text-grey 0.5px;
+    }
+    &__nav-list {
+        right: 14px;
+        top: 25vh
+    }
+    &__burger {
+        position: absolute;
+        margin-top: 31px;
+        @include media-mobile {
+            margin-top: 22px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,400");
+@import url("https://fonts.googleapis.com/css?family=Oswald:regular,200,600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,400");
+@import 'templates/varibales';
+@import 'templates/mixins';
+// <<<<<<<<<Компоненты>>>>>>>>>
+
+@import 'templates/_common';
+@import 'components/mobile-menu';
+@import 'components/_nav-list';
+@import 'components/header';
+@import 'components/main';
+@import 'components/card-box';
+@import 'components/footer';
+@import 'components/form';
+
+

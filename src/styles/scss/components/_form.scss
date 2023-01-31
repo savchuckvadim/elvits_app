@@ -1,0 +1,120 @@
+.form {
+    position: absolute;
+    top: 0;
+    @include media-tablet {
+        width: 51.9vw;
+       }
+       @include media-mobile {
+        width: 100vw;
+        height: 80vh;
+        position: static;
+    }
+    &__heading {
+        font-family: 'Oswald';
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 58px;
+        text-align: start;
+        max-width: 55%;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+        @include media-tablet {
+            max-width: 67%;
+            margin-right: -8%;
+           }
+    }
+    &__form-element {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        @include media-mobile {
+            width: 89%;
+        }
+    }
+    &__form-element:not(:last-child) {
+        margin-bottom: 24px;
+        @include media-mobile {
+            margin-bottom: 2vh;;
+        }
+    }
+    &__submit-btn {
+        border: 1px solid #171918;
+        padding: 16px 32px;
+        width: 55%;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 48px;
+        @include media-mobile {
+            width: 89%;
+        }
+    }
+}
+.form-element {
+    &_file {
+        display: flex;
+        flex-direction: row;
+    }
+    &__label {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: -0.05em;
+        color: #292929;
+        margin-bottom: 6px;
+    }
+    &__input {
+        padding: 14px;
+        height: 44px;
+        border: 1px solid #9F9F9F;
+        border-radius: 8px;
+        &_textarea {
+            overflow-y: hidden
+        }
+        &_error {
+            border: 1px solid red;
+        }
+
+    }
+    &__input::placeholder {
+        font-family: 'Inter';
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: -0.05em;
+        color: #9F9F9F;
+    }
+}
+.input {
+    display: flex;
+    justify-content: flex-start;
+    width: 55%;
+    align-items: center;
+    &__actual-btn {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175.02%;
+
+    }
+    &__chosen-file-text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #868585;
+        margin-bottom: 3px;
+    }
+    &__delete-chosen-file-btn {
+        min-width: 15%;
+    }
+    &__chosen-icon {
+        margin-left: 8px;
+    }
+}
